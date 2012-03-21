@@ -89,11 +89,21 @@
 
 		var _w = w > W ? w : W, _h = h > H ? h : H;
 
-		slide.css( { top : ( (H-h)/2 ) + 'px' , left : ( (W-w)/2 - _w ) + 'px' } );
+		var animateOut = {};
+
+		if(zy.curr > to){
+			slide.css( { top : ( (H-h)/2 ) + 'px' , left : ( (W-w)/2 + _w ) + 'px' } );
+			animateOut = { left : ( (W-w) /2 - _w) + 'px' };
+		}
+		else{
+			slide.css( { top : ( (H-h)/2 ) + 'px' , left : ( (W-w)/2 - _w ) + 'px' } );
+			animateOut = { left : ( (W-w) /2 + _w) + 'px' };
+		}
+
 
 		zy._sliding = true;
 
-		zy._slide.animate({ left : ( (W-w)/2 + _w ) + 'px' }, zy.o.speed, zy.o.fx, function(){
+		zy._slide.animate(animateOut, zy.o.speed, zy.o.fx, function(){
 			$(this).hide();
 		});
 
