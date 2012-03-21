@@ -1,0 +1,40 @@
+*{
+	margin:0;padding:0;
+}
+.zy-slider{
+	position:relative;
+	font-size:12px;
+}
+.zy-slider .zy-nav{
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:10;
+	background:#f1f1f1;
+}
+.zy-slider .zy-nav li{
+	list-style:none;
+	float:left;
+}
+.zy-slider .zy-nav li a{
+	color:#06c;
+	display:block;
+	float:left;
+	padding:3px 8px;
+	text-decoration:none;
+}
+.zy-slider .zy-nav li a:hover,
+.zy-slider .zy-nav li a.active{
+	background:#e1e1e1;
+	color:#c30;
+}
+.zy-slider .slides{
+	position:absolute;
+	left:0;top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.zy-slider .slide{
+	position:absolute;
+}

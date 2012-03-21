@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zhiyan's Image Slider Demo</title>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.zy.slider.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.zy-slider').zySlider({
+					auto_play : true,  // Automatic transition
+					show_nav : true,  // Show pagination
+					timeout : 10, // Pause duration for each slide, in seconds
+					speed : 1000, // Animation duration, in milliseconds
+					carousel : true,
+					fx : 'easeInOutQuart' // Easing function
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="zy-slider">
+			<div class="slides">
+				<div class="slide">
+					<img src="http://www.deskcity.com/picture/image_url/79031/2560SSRH_001020.jpg?1280463922" />
+				</div>
+				<div class="slide">
+					<img src="http://www.deskcity.com/picture/image_url/79026/2560SSRH_001015.jpg?1280417310" />
+				</div>
+				<div class="slide">
+					<img src="http://www.deskcity.com/picture/image_url/79020/2560SSRH_001009.jpg?1280464495" />
+				</div>
+				<div class="slide">
+					<img src="http://www.deskcity.com/picture/image_url/79018/2560SSRH_001007.jpg?1280464536" />
+				</div>
+				<div class="slide">
+					<img src="http://www.deskcity.com/picture/image_url/79013/2560SSRH_001002.jpg?1280464696" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
