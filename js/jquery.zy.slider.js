@@ -7,6 +7,7 @@
 				'timeout' : 5,
 				'show_nav' : true,
 				'auto_play' : true,
+				'direction' : true,
 				'carousel' : true
 			}
 
@@ -91,7 +92,7 @@
 
 		var animateOut = {};
 
-		if(zy.curr > to){
+		if(zy.curr > to && zy.o.direction){
 			slide.css( { top : ( (H-h)/2 ) + 'px' , left : ( (W-w)/2 + _w ) + 'px' } );
 			animateOut = { left : ( (W-w) /2 - _w) + 'px' };
 		}
