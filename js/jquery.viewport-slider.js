@@ -1,6 +1,6 @@
 ;(function($){
 	$.fn.extend({
-		zySlider : function(options){
+		ViewportSlider : function(options){
 			var defaults = {
 				'fx' : 'linear',
 				'speed' : 300,
@@ -65,8 +65,6 @@
 			});
 		}
 	});
-
-	$.fn.zySlider.test = function(){};
 
 	function go(zy, to)
 	{
